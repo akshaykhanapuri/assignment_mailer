@@ -1,11 +1,12 @@
 Django==2.1.3
-
 Pillow==5.4.1
-
 psycopg2==2.7.6.1
-
 psycopg2-binary==2.7.6.1
-
 pytz==2018.7
-
 PostgreSQL11
+
+Please edit the following parameters in settings.py with your gmail credentials
+as I'm making use of gmail smtp
+
+EMAIL_HOST_USER = 'your gmail id'
+EMAIL_HOST_PASSWORD = 'your gmail pwd'

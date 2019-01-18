@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'akshaykhanapuri12@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'your gmail id'
+EMAIL_HOST_PASSWORD = 'your gmail pwd'
 EMAIL_PORT = 587
 import os
 
