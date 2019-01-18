@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1></h1>
+<form method="POST" action = "{% url 'home' %}" enctype= "multipart/form-data">
+  {% csrf_token %}
+  <h1>{{ test }}</h1>
+  Enter recepient's email ID:
+  <br />
+  <textarea cols = "50" rows = "1" name = "em"></textarea>
+  <br />
+  <br />
+
+  Enter cc email ID:
+  <br />
+  <textarea cols = "50" rows = "1" name = "cc"></textarea>
+  <br />
+  <br />
+
+  Enter bcc email ID:
+  <br />
+  <textarea cols = "50" rows = "1" name = "bcc"></textarea>
+  <br />
+  <br />
+
+  Enter subject:
+  <br />
+  <textarea cols = "100" rows = "1" name = "sub"></textarea>
+  <br />
+  <br />
+
+  Enter message:
+  <br />
+  <textarea cols = "50" rows = "5" name = "mess"></textarea>
+  <br />
+  <br />
+
+  Upload CSV file:
+  <br />
+  <input type="file" name="csv_file" accept=".csv">
+  <br />
+  <br />
+  <input type = "submit" value = "Send!"></input>
+</form>
+
+{% endblock %}
