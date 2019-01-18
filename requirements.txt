@@ -5,8 +5,10 @@ psycopg2-binary==2.7.6.1
 pytz==2018.7
 PostgreSQL11
 
-Please edit the following parameters in settings.py with your gmail credentials
+++ Please edit the following parameters in settings.py with your gmail credentials
 as I'm making use of gmail smtp
 
 EMAIL_HOST_USER = 'your gmail id'
 EMAIL_HOST_PASSWORD = 'your gmail pwd'
+
+++ Also please edit the email id of the sender and admin in the mail/emailadmin.py module in the em_admin function

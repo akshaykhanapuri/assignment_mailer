@@ -26,7 +26,7 @@ def em_admin():
         'Summary',
         lst,
         'akshaykhanapuri12@gmail.com',
-        ['cucexul@321-email.com'],
+        ['akshaykhanapuri12@gmail.com'],
         None,
         None,
         None,
