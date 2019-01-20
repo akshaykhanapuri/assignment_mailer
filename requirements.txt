@@ -1,9 +1,18 @@
 Django==2.1.3
+django-elasticsearch-dsl==0.5.1
+elasticsearch==6.3.1
+elasticsearch-dsl==6.1.0
+ipaddress==1.0.22
 Pillow==5.4.1
 psycopg2==2.7.6.1
 psycopg2-binary==2.7.6.1
+python-dateutil==2.7.5
+python-logstash==0.4.6
 pytz==2018.7
-PostgreSQL11
+six==1.12.0
+urllib3==1.24.1
+
+
 
 ++ Please edit the following parameters in settings.py with your gmail credentials
 as I'm making use of gmail smtp

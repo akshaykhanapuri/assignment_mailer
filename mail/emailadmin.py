@@ -5,6 +5,9 @@ from .models import Mail
 import os
 import time
 from datetime import datetime
+import logging
+# Create your views here.
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -22,6 +25,9 @@ def em_admin():
             summary_list.append('____')
 
         lst = str(summary_list)
+        logger = logging.getLogger(__name__)
+        # Log an error message
+        logger.error(summary_list)
         emailadmin = EmailMessage(
         'Summary',
         lst,
@@ -65,7 +71,7 @@ def em_user(request):
     email = EmailMessage(
     mailobj.sub,
     mailobj.message,
-    'akshaykhanapuri12@gmail.com ',
+    'akshaykhanapuri12@gmail.com',
     non_rep_reclist,
     [mailobj.bcc],
     None,
